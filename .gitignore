@@ -1,0 +1,39 @@
+# Secrets (never commit API keys)
+.env
+.env.*
+!.env.example
+
+# Python
+venv/
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+
+# Local data (SQLite history, caches)
+storage/*.db
+storage/*.db-shm
+storage/*.db-wal
+*.sqlite3
+
+# Node / frontend
+node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/node_modules/
+*.tsbuildinfo
+npm-debug.log*
+
+# Editor / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.log
+
+# Local agent tooling (reinstall with `npx skills add Leonxlnx/taste-skill`)
+.claude/
